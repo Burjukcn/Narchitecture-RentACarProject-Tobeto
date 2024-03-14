@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enitites
+namespace Domain.Entities
 {
-    public class Brand : BaseEntity<Guid>
+    public class Brand : BaseEntity<int>
     {
         public string Name { get; set; }  //Audi 
 
@@ -19,11 +20,10 @@ namespace Domain.Enitites
             Models = new HashSet<Model>();
         }
 
-        public Brand(Guid id, string name) : this()
+        public Brand(int id, string name) : this()
         {
             Id = id;
             Name = name;
         }
     }
-
 }

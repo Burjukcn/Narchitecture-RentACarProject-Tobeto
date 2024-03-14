@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enitites
+namespace Domain.Entities
 {
-    public class Car : BaseEntity<Guid>
+    public class Car : BaseEntity<int>
     {
         public int ModelId { get; set; }
         public int ModelYear { get; set; }
@@ -17,14 +18,12 @@ namespace Domain.Enitites
 
         public Model Model { get; set; }
 
-        public virtual ICollection<CarImage> CarImages { get; set; }
-
         public Car()
         {
-            CarImages = new HashSet<CarImage>();
+
         }
 
-        public Car(Guid id, int modelId, int modelYear,
+        public Car(int id, int modelId, int modelYear,
             string plate, int state, double dailyPrice) : this()
         {
             Id = id;
