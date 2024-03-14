@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\webProje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insfrastructure", "src\webProjetc\Insfrastructure\Insfrastructure\Insfrastructure.csproj", "{9F83E819-1D17-4497-B7D5-3E7C4D9DF595}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\webProjetc\WebAPI\WebAPI.csproj", "{EF0AC15E-3855-409D-8D27-3D36D3F18156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\webProjetc\WebAPI\WebAPI.csproj", "{EF0AC15E-3855-409D-8D27-3D36D3F18156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcerns", "src\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj", "{C11C7CF0-5C35-4898-8BD9-0609D7EB1045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Applicantion", "src\corePackages\Core.Applicantion\Core.Applicantion.csproj", "{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{EF0AC15E-3855-409D-8D27-3D36D3F18156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF0AC15E-3855-409D-8D27-3D36D3F18156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF0AC15E-3855-409D-8D27-3D36D3F18156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11C7CF0-5C35-4898-8BD9-0609D7EB1045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11C7CF0-5C35-4898-8BD9-0609D7EB1045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11C7CF0-5C35-4898-8BD9-0609D7EB1045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11C7CF0-5C35-4898-8BD9-0609D7EB1045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +76,8 @@ Global
 		{8BD9FC00-DEC6-44DA-863B-B2F1B2ADC422} = {70F7B200-23BF-4583-A178-B7C581B7ABB1}
 		{9F83E819-1D17-4497-B7D5-3E7C4D9DF595} = {70F7B200-23BF-4583-A178-B7C581B7ABB1}
 		{EF0AC15E-3855-409D-8D27-3D36D3F18156} = {70F7B200-23BF-4583-A178-B7C581B7ABB1}
+		{C11C7CF0-5C35-4898-8BD9-0609D7EB1045} = {6A65513B-CBE5-4EB1-99E3-26F610FB5399}
+		{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85} = {6A65513B-CBE5-4EB1-99E3-26F610FB5399}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59B7AEAD-6ACE-4350-96BD-3496E4BF8443}

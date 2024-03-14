@@ -9,7 +9,8 @@ namespace NarchitectureCorePersistence.Repositories
         public interface IAsyncRepository<TEntity, TEntityId> : IQuery<TEntity> where TEntity : BaseEntity<TEntityId>
     {
 
-        Task<List<TEntity>> GetAllAsync (Expression<Func<TEntity, bool>> predicate = null,
+        Task<List<TEntity>> GetAllAsync 
+            (Expression<Func<TEntity, bool>> predicate = null,
              Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null);
 
         Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> predicate,
