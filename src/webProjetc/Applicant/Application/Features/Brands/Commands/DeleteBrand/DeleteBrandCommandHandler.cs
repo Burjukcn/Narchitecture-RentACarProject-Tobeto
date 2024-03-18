@@ -1,10 +1,11 @@
-﻿using Application.Features.Brands.Dtos;
+﻿using Application.Features.Brands.Commands.DeleteBrand;
+using Application.Features.Brands.Dtos;
 using Application.Service.Repositories;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.Brands.Commands.Delete
+namespace Application.Features.Brands.Commands.DeleteBrand
 {
     public class DeleteBrandCommandHandler : IRequestHandler<DeleteBrandCommand, DeletedBrandResponse>
     {

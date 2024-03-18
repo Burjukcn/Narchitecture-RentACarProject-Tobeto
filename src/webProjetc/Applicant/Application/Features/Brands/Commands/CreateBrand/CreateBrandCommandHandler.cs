@@ -1,10 +1,11 @@
-﻿using Application.Features.Brands.Dtos;
+﻿using Application.Features.Brands.Commands.CreateBrand;
+using Application.Features.Brands.Dtos;
 using Application.Service.Repositories;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.Brands.Commands.Create;
+namespace Application.Features.Brands.Commands.CreateBrand;
 
 public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommand, CreatedBrandResponse>
 {

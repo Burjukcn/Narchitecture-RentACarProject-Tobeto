@@ -6,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Brands.Commands.Delete
+namespace Application.Features.Brands.Commands.UpdateBrand
 {
-    public class DeleteBrandCommand : IRequest<DeletedBrandResponse>
+
+    public class UpdateBrandCommand : IRequest<UpdatedBrandResponse>
     {
         public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
-

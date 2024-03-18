@@ -12,10 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Brands\Rules\" />
-    <Folder Include="Features\Cars\Constants\" />
     <Folder Include="Features\Cars\Rules\" />
-    <Folder Include="Features\Models\Commands\Constants\" />
     <Folder Include="Features\Models\Rules\" />
   </ItemGroup>
 

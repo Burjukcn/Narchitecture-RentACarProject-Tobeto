@@ -1,7 +1,8 @@
 ﻿
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore;
+
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.EntityTypeConfiguration
 {
@@ -15,6 +16,8 @@ namespace Persistence.EntityTypeConfiguration
             builder.Property(x => x.CreatedDate).HasColumnName("CreatedDate");
             builder.Property(x => x.UpdatedDate).HasColumnName("UpdatedDate");
             builder.Property(x => x.DeletedDate).HasColumnName("DeletedDate");
+
+            builder.HasQueryFilter(u => !u.DeletedDate.HasValue);
 
             builder.HasMany(x => x.Models);
         }

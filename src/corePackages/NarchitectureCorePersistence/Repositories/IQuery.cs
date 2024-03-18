@@ -1,6 +1,6 @@
 ﻿
 
-namespace NarchitectureCorePersistence.Repositories
+namespace Core.Persistence.Repositories
 {
     public interface IQuery<T>
     {

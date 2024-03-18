@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webProjetcs", "webProjetcs"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\webProjetc\Persistence\Persistence.csproj", "{236D0A74-02CF-4E8A-A46D-5FBAB85876A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarchitectureCorePersistence", "src\corePackages\NarchitectureCorePersistence\NarchitectureCorePersistence.csproj", "{4E7F4609-B06C-4F04-B797-A410685DD92B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "src\corePackages\NarchitectureCorePersistence\Core.Persistence.csproj", "{4E7F4609-B06C-4F04-B797-A410685DD92B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\webProjetc\Applicant\Application\Application.csproj", "{8BD9FC00-DEC6-44DA-863B-B2F1B2ADC422}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcerns",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Applicantion", "src\corePackages\Core.Applicantion\Core.Applicantion.csproj", "{38A4B2B2-C083-4C94-86EF-1DC0EEC62E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\webProjetc\Domain\Domain.csproj", "{3B4BA548-98E1-4C8D-A6DD-EE23F5A52152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\webProjetc\Domain\Domain.csproj", "{3B4BA548-98E1-4C8D-A6DD-EE23F5A52152}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
