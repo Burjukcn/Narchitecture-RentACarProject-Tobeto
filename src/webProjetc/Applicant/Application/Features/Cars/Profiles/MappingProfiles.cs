@@ -2,7 +2,9 @@
 using Application.Features.Cars.Commands.Delete;
 using Application.Features.Cars.Commands.Update;
 using Application.Features.Cars.Dtos;
+using Application.Features.Cars.Models;
 using AutoMapper;
+using Core.Persistence.Paging;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -27,6 +29,9 @@ namespace Application.Features.Cars.Profiles
 
             CreateMap<Car, GetAllCarsResponse>().ReverseMap();
             CreateMap<Car, GetByIdCarResponse>().ReverseMap();
+            CreateMap<Car, GetListCarResponse>()
+           .ForMember(destinationMember: x => x.BrandName, memberOptions: opt => opt.MapFrom(x => x.Model.Brand.Name));
+            CreateMap<IPaginate<Car>, CarListModel>().ReverseMap();
         }
     }
 }

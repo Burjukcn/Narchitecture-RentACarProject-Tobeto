@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Persistence.Repositories.EntityFramework
+namespace Core.Persistence.Repositories
 {
     public interface IEntityTimestamps
     {

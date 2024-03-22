@@ -1,5 +1,5 @@
-﻿using Core.Persistence.Repositories;
-using NarchitectureCorePersistence.Repositories;
+﻿ 
+using Core.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,10 +18,11 @@ namespace Domain.Entities
         public double DailyPrice { get; set; }
 
         public Model Model { get; set; }
+        public virtual ICollection<CarImage> CarImages { get; set; }
 
         public Car()
         {
-
+            CarImages = new HashSet<CarImage>();
         }
 
         public Car(int id, int modelId, int modelYear,

@@ -14,17 +14,17 @@ public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        CreateMap<Brand, CreateBrandCommand>().ReverseMap();
-        CreateMap<Brand, CreatedBrandResponse>().ReverseMap();
+        CreateMap<Brand, CreateBrandCommand>().ReverseMap(); //Brandi   CreateBrandCommand   çevir anlamına gelir
+        CreateMap<Brand, CreatedBrandResponse>().ReverseMap();//  çevir anlamına gelir
 
-        CreateMap<Brand, DeleteBrandCommand>().ReverseMap();
-        CreateMap<Brand, DeletedBrandResponse>().ReverseMap();
+        CreateMap<Brand, DeleteBrandCommand>().ReverseMap();//  çevir anlamına gelir
+        CreateMap<Brand, DeletedBrandResponse>().ReverseMap();//  çevir anlamına gelir
 
-        CreateMap<Brand, UpdateBrandCommand>().ReverseMap();
-        CreateMap<Brand, UpdatedBrandResponse>().ReverseMap();
+        CreateMap<Brand, UpdateBrandCommand>().ReverseMap();//  çevir anlamına gelir
+        CreateMap<Brand, UpdatedBrandResponse>().ReverseMap();//  çevir anlamına gelir
 
-        CreateMap<Brand, GetAllBrandsResponse>().ReverseMap();
-        CreateMap<Brand, GetByIdBrandResponse>().ReverseMap();
+        CreateMap<Brand, GetAllBrandsResponse>().ReverseMap();//  çevir anlamına gelir
+        CreateMap<Brand, GetByIdBrandResponse>().ReverseMap();//  çevir anlamına gelir
 
         CreateMap<Brand, GetListBrandResponse>().ReverseMap();
         CreateMap<IPaginate<Brand>, BrandListModel>().ReverseMap();

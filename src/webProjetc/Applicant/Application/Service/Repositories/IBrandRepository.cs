@@ -1,7 +1,5 @@
-﻿
-
-using Domain.Entities;
-using NarchitectureCorePersistence.Repositories;
+﻿using Domain.Entities;
+using Core.Persistence.Repositories;
 
 namespace Application.Service.Repositories
 {

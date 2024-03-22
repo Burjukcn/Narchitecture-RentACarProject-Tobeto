@@ -1,8 +1,4 @@
-﻿
-
-using Core.Persistence.Repositories.EntityFramework;
-
-namespace Core.Persistence.Repositories
+﻿namespace Core.Persistence.Repositories
 {
     public class BaseEntity<TId> : IEntityTimestamps
     {
